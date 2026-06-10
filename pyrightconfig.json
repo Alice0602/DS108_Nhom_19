@@ -1,0 +1,10 @@
+{
+  "reportMissingImports": false,
+  "reportUnknownMemberType": false,
+  "reportUnknownArgumentType": false,
+  "reportUnknownVariableType": false,
+  "reportUnknownParameterType": false,
+  "reportAttributeAccessIssue": false,
+  "reportAssignmentType": false,
+  "reportCallInDefaultInitializer": false
+}
