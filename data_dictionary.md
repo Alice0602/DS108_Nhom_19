@@ -37,7 +37,7 @@ Bộ dữ liệu cuối cùng được tổ chức tối ưu theo nguyên lý ch
 | **`rating_ratio`** | Stored (Lưu trữ) | `float64` | Derived (Logic) | Tỷ lệ đánh giá tích cực thô: $\frac{\text{positive}}{\text{positive} + \text{negative}}$. | Số thực, nằm trong khoảng $[0.0, 1.0]$. |
 | **`wilson_score`** | Stored (Lưu trữ) | `float64` | Derived (Wilson CI) | Giới hạn dưới khoảng tin cậy Wilson Score (95%, z=1.96). Biến Target chính. | Số thực, nằm trong khoảng $[0.0, 1.0]$. |
 | **`owners_min`** | Stored (Lưu trữ) | `Int64` (nullable) | SteamSpy API | Cận dưới của lượng người sở hữu game ước lượng từ SteamSpy. | Số nguyên, $\ge 0$. Khuyết (`NaN`) đối với nhóm MNAR `'0 .. 20,000'`. |
-| **`owners_max`** | Stored (Lưu trữ) | `Int64` (nullable) | SteamSpy API | Cận trên của lượng người sở hữu game ước lượng từ SteamSpy. | Số nguyên, $\ge \text{owners\_min}$. |
+| **`owners_max`** | Stored (Lưu trữ) | `Int64` (nullable) | SteamSpy API | Cận trên của lượng người sở hữu game ước lượng từ SteamSpy. | Số nguyên, $\ge$ `owners_min`. |
 | **`owners_midpoint`** | Stored (Lưu trữ) | `Int64` (nullable) | Derived (Logic) | Giá trị trung vị của lượng người sở hữu ước lượng: $\frac{\text{min} + \text{max}}{2}$. | Số nguyên, $\ge 0$. Khuyết (`NaN`) đối với nhóm MNAR. |
 | **`owners_min_known`**| Stored (Lưu trữ) | `boolean` | Derived (Logic) | Đánh cờ trạng thái khuyết thiếu dữ liệu owners cận dưới. | `True` (nếu lượng owners xác định), `False` (nếu khuyết MNAR). |
 | **`ccu`** | Stored (Lưu trữ) | `Int64` (nullable) | SteamSpy API | Lượng người chơi đồng thời đỉnh (Peak Concurrent Users). | Số nguyên, $\ge 0$. Đều bằng `0` (MNAR) đối với các game sau 2023. |
