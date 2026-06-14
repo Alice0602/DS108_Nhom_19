@@ -9,7 +9,7 @@
 *   **Tại sao bộ dữ liệu này được xây dựng?**  
     Bộ dữ liệu được xây dựng nhằm mục đích nghiên cứu các xu hướng phát hành game, cấu trúc phân khúc giá (pricing) và mức độ đón nhận của người dùng đối với các tựa game được phát hành trên nền tảng Steam trong giai đoạn từ năm 2022 đến năm 2026. Các bộ dữ liệu Steam hiện có trên mạng thường đã lỗi thời hoặc gặp các lỗi dữ liệu thô nghiêm trọng (như lỗi đơn vị giá cents-USD hoặc khuyết thiếu thông tin playtime).
 *   **Ai là người xây dựng bộ dữ liệu?**  
-    Được xây dựng bởi nhóm sinh viên thực hiện đồ án cuối kỳ môn DS108 (Capstone Project).
+    Được xây dựng bởi nhóm 19 thực hiện đồ án cuối kỳ môn DS108.
 *   **Đơn vị nào tài trợ cho việc xây dựng bộ dữ liệu này?**  
     Không có đơn vị tài trợ tài chính bên ngoài. Đây hoàn toàn là một dự án nghiên cứu học thuật phục vụ môn học.
 
@@ -37,9 +37,9 @@
 *   **Dữ liệu được thu thập bằng cách nào?**  
     Dữ liệu được thu thập tự động thông qua một script Python (`scripts/collect_steam_data.py`) gọi trực tiếp đến **SteamSpy API** (để lấy số lượng đánh giá và CCU) và **Steam Store API** (để lấy ngày phát hành, giá và các thể loại game).
 *   **Dữ liệu được thu thập vào thời gian nào?**  
-    Được thu thập vào tháng 5 năm 2026.
+    Được thu thập vào tháng 6 năm 2026.
 *   **Bộ dữ liệu bao quát khung thời gian phát hành nào của game?**  
-    Bộ dữ liệu bao gồm các game có ngày phát hành chính thức từ 01/01/2022 đến ngày 31/12/2026 (bao gồm cả các game sắp phát hành đã đăng ký trên hệ thống của Steam trong năm 2026).
+    Bộ dữ liệu bao gồm các game có ngày phát hành chính thức từ 01/01/2022 đến ngày 1/6/2026.
 
 ---
 
