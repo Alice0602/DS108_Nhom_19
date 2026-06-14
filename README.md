@@ -1,6 +1,6 @@
 # Quy trình Thu thập, Làm sạch & Kiểm định Chất lượng Bộ dữ liệu Steam Games
 
-**Đồ án môn học DS108 — Tiền xử lý và Xây dựng Bộ dữ liệu (Capstone Project)**
+**Đồ án môn học DS108 — Tiền xử lý và Xây dựng Bộ dữ liệu**
 
 Kho lưu trữ này chứa toàn bộ đường ống dẫn dữ liệu (data pipeline) từ đầu đến cuối cho việc thu thập, làm sạch, thẩm định và chuẩn hóa bộ dữ liệu các trò chơi trên Steam được phát hành trong giai đoạn từ **2022 đến 2026**.
 
